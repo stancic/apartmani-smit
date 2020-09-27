@@ -1,0 +1,58 @@
+@import "../../variables.scss";
+
+
+.nav-container {
+	margin: 0;
+	padding: 30px 80px 30px 80px;
+	width: 100%;
+}
+
+.nav-links-container{
+	margin: 0;
+	padding: 6px 0 0 6px;
+	display: block;
+	float: left;
+	.nav-link-item{
+		display: inline;
+		font-family: 'Chivo', sans-serif;
+		font-weight: 400;
+		.title{
+			font-weight: 700;
+		}
+		.nav-link{
+			margin-right: 33px;
+			text-decoration: none;
+			color: $computerScreenNavLinksColor;
+		}
+	}
+	
+}
+
+.nav-contact-container{
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: right;
+	.nav-contact-item{
+		display: inline;
+		font-family: 'Chivo', sans-serif;
+		font-weight: 400;
+		.contact{
+			pointer-events: none;
+			cursor: default;	
+		}
+		.nav-contact{
+			margin-left: 33px;
+			text-decoration: none;
+			color: $computerScreenNavLinksColor;
+			.buttonStyle{
+				background-color: transparent;
+				font-size: 18px;
+				padding: 5px 30px;
+				border: 1px solid #FFFFFF;
+				cursor: pointer;
+				color: $computerScreenNavLinksColor;
+			}
+		}
+	}
+}
