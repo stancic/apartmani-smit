@@ -1,10 +1,17 @@
 import React from 'react'
+import './Apartments.scss'
+import { apartmentDataHR } from './Data'
+import OneApartment from './OneApartment'
 
-function Apartments() {
-	console.log("SUCK MY DICK")
+function Apartments({title}) {
 	return (
-		<div>
-			<h1>SUCK MY DICK BITCH</h1>
+		<div id="apartments" style={{backgroundColor: "#A7C4FF"}}>
+			<div className="apartment-title-container">
+				<h1 className="title">Apartmani.</h1>
+			</div>
+			<div className="apartment-detail-container">
+				<OneApartment {...apartmentDataHR}/>
+			</div>
 		</div>
 	)
 }

@@ -12,7 +12,7 @@ function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_t
 						<Link to="/" className="nav-title nav-link">{title}</Link>
 					</li>
 					<li className="nav-link-item">
-						<Link to="/apartments" className="nav-link">{firstLink}</Link>
+						<Link smooth to="apartments" className="nav-link">{firstLink}</Link>
 					</li>
 					<li className="nav-link-item">
 						<Link to="/" className="nav-link">{secondLink}</Link>

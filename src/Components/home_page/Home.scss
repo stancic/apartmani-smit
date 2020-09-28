@@ -5,12 +5,12 @@
 }
 
 //Background for homepage
-.container{
+.background-image{
 	top: 0;
 	height: 100vh;
 	background-image: url($homeBackground);
 	background-size: cover;
-
+	border: 1px solid black;
 	z-index: -1;
 	filter: blur(3px);
 	-webkit-filter: blur(3px);

@@ -14,8 +14,9 @@ function App() {
 		<div>
 			<Navigation {...linkHR}/>
 			<MobileNavigation />
-			<Home {...titleHR}/>
-			<Apartments />
+			<Home {...titleHR} />
+			<Apartments title={"Apartmani"}/>
+				
 		</div>
   );
 }
