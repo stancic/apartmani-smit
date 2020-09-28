@@ -1,22 +1,24 @@
 @import "../../variables.scss";
 
-
+//nav container
 .nav-container {
-	margin: 0;
-	padding: 30px 80px 30px 80px;
-	width: 100%;
+	position: sticky;
+	top: 10px;
+	font-size: 17px;
+	z-index: 99;
 }
 
+//left part of navbar
 .nav-links-container{
 	margin: 0;
-	padding: 6px 0 0 6px;
+	padding: 30px 80px 30px 80px;
 	display: block;
 	float: left;
 	.nav-link-item{
 		display: inline;
 		font-family: 'Chivo', sans-serif;
 		font-weight: 400;
-		.title{
+		.nav-title{
 			font-weight: 700;
 		}
 		.nav-link{
@@ -28,31 +30,33 @@
 	
 }
 
+//right part of navbar
 .nav-contact-container{
 	margin: 0;
-	padding: 0;
+	padding: 30px 80px 30px 80px;
 	display: block;
 	float: right;
 	.nav-contact-item{
 		display: inline;
 		font-family: 'Chivo', sans-serif;
 		font-weight: 400;
+		margin-left: 33px;
 		.contact{
 			pointer-events: none;
 			cursor: default;	
 		}
 		.nav-contact{
-			margin-left: 33px;
 			text-decoration: none;
 			color: $computerScreenNavLinksColor;
-			.buttonStyle{
-				background-color: transparent;
-				font-size: 18px;
-				padding: 5px 30px;
-				border: 1px solid #FFFFFF;
-				cursor: pointer;
-				color: $computerScreenNavLinksColor;
-			}
 		}
+	}
+}
+
+
+
+//responsivness starts here
+@media (max-width: 1000px){
+	.nav-container{
+		display: none;
 	}
 }

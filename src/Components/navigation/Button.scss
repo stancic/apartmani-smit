@@ -1,0 +1,21 @@
+@import "../../variables.scss";
+
+//button for scrolling to form
+.buttonStyle{
+	display: inline-block;
+	margin: 0;
+	background-color: transparent;
+	font-size: 18px;
+	padding: 5px 30px;
+	border: 1px solid #FFFFFF;
+	cursor: pointer;
+	color: $computerScreenNavLinksColor;
+}
+
+@media(max-width: 1000px){
+	.buttonStyle{
+		padding: 10px 35px;
+		font-size: 20px;
+		
+	}
+}

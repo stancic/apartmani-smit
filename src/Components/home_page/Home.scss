@@ -1,14 +1,70 @@
 @import "../../variables.scss";
 
+.button-container{
+	display: none;
+}
+
+//Background for homepage
 .container{
 	top: 0;
-	position: fixed;
-	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-image: url($homeBackground);
 	background-size: cover;
+
 	z-index: -1;
 	filter: blur(3px);
 	-webkit-filter: blur(3px);
-	transform: scale(1.02)
+	border: none;
+}
+
+.title-container{
+	display: inline-block;
+	position: absolute;
+	bottom: 10em;
+	left: 5%;
+	.home-title{
+		color: $titleColor;
+		font-size: 5rem;
+	}
+}
+
+//icon for indicating that you need to scroll
+.icon-container{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	position: absolute;
+	margin: auto;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	font-size: 35px;
+	.icon-arrowDown{
+		color: white;
+	}
+}
+
+
+//indicating max width and height for some responsive changes
+@media (max-width: 1000px){
+	.title-container{
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		.button-container{
+			margin-top: 10px;
+			display: block;
+		}
+		.home-title{
+			font-size: 3rem;
+		}
+	}
+}
+
+@media (max-height: 680px){
+	.title-container{
+		top: 45%;
+	}
 }

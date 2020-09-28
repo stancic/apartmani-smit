@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navigation.scss'
 import { HashLink as Link} from 'react-router-hash-link'
-
+import Button from './Button'
 
 function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_text}) {
 	return (
@@ -9,10 +9,10 @@ function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_t
 			<div className="nav-links-container">
 				<ul>
 					<li className="nav-link-item">
-						<Link to="/" className="title nav-link">{title}</Link>
+						<Link to="/" className="nav-title nav-link">{title}</Link>
 					</li>
 					<li className="nav-link-item">
-						<Link to="/" className="nav-link">{firstLink}</Link>
+						<Link to="/apartments" className="nav-link">{firstLink}</Link>
 					</li>
 					<li className="nav-link-item">
 						<Link to="/" className="nav-link">{secondLink}</Link>
@@ -25,16 +25,14 @@ function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_t
 			<div className="nav-contact-container">
 				<ul>
 					<li className="nav-contact-item">
-						<Link className="nav-contact contact">{contact}</Link>
+						<Link to="/" className="nav-contact contact">{contact}</Link>
 					</li>
 					<li className="nav-contact-item">
-						<Link className="nav-contact" to="/">
-							<button className="buttonStyle">{button_text}</button>
-						</Link>
+						<Button button_text={button_text}/>
 					</li>
 				</ul>
 			</div>
-		</div>
+		</div>	
 	)
 }
 
