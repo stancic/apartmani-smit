@@ -2,16 +2,21 @@
 
 //nav container
 .nav-container {
-	position: sticky;
-	top: 10px;
+	position: fixed;
 	font-size: 17px;
+	top: 0;
 	z-index: 99;
+	width: 100%;
+	height: 80px;
+	display: block;
+	transition: 0.3s all ease;
+	color: $offWhite;
 }
 
 //left part of navbar
 .nav-links-container{
 	margin: 0;
-	padding: 30px 80px 30px 80px;
+	padding: 30px 0 30px 80px;
 	display: block;
 	float: left;
 	.nav-link-item{
@@ -24,7 +29,7 @@
 		.nav-link{
 			margin-right: 33px;
 			text-decoration: none;
-			color: $computerScreenNavLinksColor;
+			color: $offWhite;
 		}
 	}
 	
@@ -33,7 +38,7 @@
 //right part of navbar
 .nav-contact-container{
 	margin: 0;
-	padding: 30px 80px 30px 80px;
+	padding: 25px 80px 25px 0;
 	display: block;
 	float: right;
 	.nav-contact-item{
@@ -47,7 +52,7 @@
 		}
 		.nav-contact{
 			text-decoration: none;
-			color: $computerScreenNavLinksColor;
+			color: $offWhite;
 		}
 	}
 }
@@ -55,7 +60,7 @@
 
 
 //responsivness starts here
-@media (max-width: 1000px){
+@media (max-width: 1024px){
 	.nav-container{
 		display: none;
 	}

@@ -12,6 +12,14 @@
 	color: $computerScreenNavLinksColor;
 }
 
+@media(max-width: 1024px){
+	.buttonStyle{
+		padding: 20px 60px;
+		font-size: 30px;
+	}
+}
+
+
 @media(max-width: 1000px){
 	.buttonStyle{
 		padding: 10px 35px;

@@ -1,0 +1,37 @@
+#location{
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+.location-title-container{
+	position: relative;
+	background-color: #FFA7A7;
+	margin-left: 60px;
+	margin-bottom: 60px;
+	.title{
+		padding: 0;
+		font-weight: 800;
+		font-size: 48px;
+	}
+}
+
+.location-data-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.location-details{
+	font-size: 1.6rem;
+	margin-left: 60px;
+	margin-top: 60px;
+}
+
+.google-location-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	padding: 90px;
+	border: 1px solid #707070;
+	border-radius: 40px;
+}

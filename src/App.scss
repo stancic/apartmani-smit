@@ -18,10 +18,26 @@ h2, h3 {
 	font-weight: 700;
 }
 
+p, button{
+	font-family: 'Chivo', sans-serif;
+}
+
 ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+/*GLOBAL STYLES FOR LEFT SIDE AND RIGHT SIDE OF THE LOCATION 
+AND ABOUT US PAGES*/
+.left-side-container{
+	flex: 1;
+}
+.right-side-container{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*** FONTS ***/

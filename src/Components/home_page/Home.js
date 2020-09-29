@@ -5,7 +5,7 @@ import Button from '../navigation/Button'
 
 function Home({ titleWelcome, titleMessage, button_text }) {
 	return (
-		<div id="/">
+		<div id="home">
 			<div className="background-image"></div>
 			<div className="title-container">
 				<h1 className="home-title">{titleWelcome}<br/>{titleMessage}</h1>

@@ -7,14 +7,38 @@
 	font-size: 38px;
 }
 
+
+@media(max-width: 1024px){
+	.mobile-navigation-container{
+		display: block;
+		
+	}
+	.icon-holder{
+		z-index: 99;
+		position: fixed;
+		right: 3rem;
+		top: 2rem;
+		cursor: pointer;
+	}
+	.menu-open-icon{
+		font-size: 4rem;
+	}
+	
+}
+
 @media(max-width: 1000px){
 	.mobile-navigation-container{
 		display: block;
+		
 	}
 	.icon-holder{
-		position: absolute;
+		z-index: 99;
+		position: fixed;
 		right: 3rem;
 		top: 2rem;
+		cursor: pointer;
 	}
-	
+	.menu-open-icon{
+		font-size: 38px;
+	}
 }

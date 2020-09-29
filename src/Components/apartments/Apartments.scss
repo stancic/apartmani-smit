@@ -1,16 +1,41 @@
+#apartments{
+	padding-top: 40px;
+}
+
 .apartment-title-container{
 	position: relative;
 	background-color: #A7C4FF;
-	padding-top: 40px;
 	margin-left: 60px;
 	margin-bottom: 60px;
 	.title{
+		padding: 0;
 		font-weight: 800;
 		font-size: 48px;
 	}
 }
 
-.apartment-detail-container{
+.apartment-detail{
 	text-align: center;
 	padding-bottom: 60px;
+}
+
+.price-menu-container{
+	background-color: rgb(255, 255, 249);
+	display: inline-block;
+	margin-bottom: 30px;
+	text-align: center;
+	line-height: 40px;
+	width: 25%;
+	height: 40px;
+	margin-left: 65%;
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: 0.3s all ease-out;
+	.price-title{
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+	&:hover{
+		border: 1px solid black;
+	}
 }
