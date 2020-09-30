@@ -1,6 +1,10 @@
 #about-us{
 	padding-top: 40px;
 	padding-bottom: 200px;
+	.right-side-container{
+		justify-content: start;
+		align-items: flex-start;
+	}
 }
 
 .about-us-title-container{
@@ -38,3 +42,14 @@
 	margin-top: 60px;
 	margin-left: 14%;
 }
+
+
+.form-container{
+	margin-left: 40px;
+	margin-top: 7em;
+	.form-title{
+		font-size: 2rem;
+		margin-bottom: 40px;
+	}
+}
+

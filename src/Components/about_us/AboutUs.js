@@ -1,12 +1,12 @@
 import React from 'react'
 import './AboutUs.scss'
+import Form from './form/Form'
+
+// handleSubmit, namePlaceholder, lastNamePlaceholder, eMailPlaceholder, phonePlaceholder, messagePlaceholder, buttonText
 
 function AboutUs({title, text, formTitle, familyPhoto, namePlaceholder, lastNamePlaceholder, 
 	eMailPlaceholder, phonePlaceholder, messagePlaceholder, buttonText}) {
 	
-	const handleSubmit = () => {
-		console.log('poslano')
-	}
 	return (
 		<div id="about-us" style={{backgroundColor: '#E2C26B'}}>
 			<div className="about-us-title-container">
@@ -23,14 +23,11 @@ function AboutUs({title, text, formTitle, familyPhoto, namePlaceholder, lastName
 				</div>
 				<div className="right-side-container">
 					<div className="form-container">
-						<form onSubmit={handleSubmit}>
-							<input type="text" value="name" placeholder={namePlaceholder}/>
-							<input type="text" value="lastname" placeholder={lastNamePlaceholder}/>
-							<input type="text" value="email" placeholder={eMailPlaceholder}/>
-							<input type="text" value="phone" placeholder={phonePlaceholder}/>
-							<textarea name="message" id="message" cols="30" rows="10" value="text">{messagePlaceholder}</textarea>
-							<button type="submit">{buttonText}</button>
-						</form>
+						<h2 className="form-title">{formTitle.above}<br/>{formTitle.below}</h2>
+						<Form namePlaceholder={namePlaceholder} lastNamePlaceholder={lastNamePlaceholder} 
+							eMailPlaceholder={eMailPlaceholder} phonePlaceholder={phonePlaceholder}
+							messagePlaceholder={messagePlaceholder} buttonText={buttonText}
+						/>
 					</div>
 				</div>
 			</div>
