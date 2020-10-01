@@ -39,3 +39,12 @@
 		border: 1px solid black;
 	}
 }
+
+@media(max-width: 1024px){
+	.apartment-title-container{
+		margin-left: 40px;
+		.title{
+			font-size: 38px;
+		}
+	}
+}

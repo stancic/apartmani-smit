@@ -51,6 +51,15 @@
 		}
 	}
 	.location-details{
-		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 0;
+	}
+	.location-title-container{
+		margin-left: 40px;
+		.title{
+			font-size: 38px;
+		}
 	}
 }
