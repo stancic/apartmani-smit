@@ -46,7 +46,7 @@ function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_t
 						<Link to="/" className="nav-contact contact"  style={scrollState ? {color: 'black'} : {}}>{contact}</Link>
 					</li>
 					<li className="nav-contact-item">
-						<Button button_text={button_text} style={scrollState ? {color: 'black', border: '1px solid black'} : {}}/>
+						<Link smooth to="/#about-us-message" style={{textDecoration:'none'}}><Button button_text={button_text} style={scrollState ? {color: 'black', border: '1px solid black'} : {}}/></Link>
 					</li>
 				</ul>
 			</div>
