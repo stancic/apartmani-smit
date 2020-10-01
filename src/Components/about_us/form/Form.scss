@@ -1,37 +1,129 @@
 ::-webkit-input-placeholder{
-	color: blue;
+	font-family: 'Chivo', sans-serif;
+	font-size: 1.3em;
+	color: rgba(0,0,0,.3);
 }
+
 
 .form{
 	display: flex;
 	flex-direction: column;
-	.form-input{
-		display: inline-block;	
+	.form-input{	
 		background-color: transparent;
-		position: relative;
-		width: 25em;
+		padding: 0;
+		width: 22em;
 		height: 2em;
-		margin-right: 15px;
+		margin-right: 2em;
 		border: none;
 		border-bottom: 1px solid black;
-		background-color: red;
+		outline-style: none;
+		font-family: 'Chivo', sans-serif;
 	}	
 	.name-and-lastName-container{
 		flex: 1;
+		margin-bottom: 20px;
+		height: 10em;
+		.last-name{
+			margin-left: 3em;
+		}
 	}
 	.email-and-phone-container{
 		flex: 1;
 		margin-bottom: 20px;
+		.phone{
+			margin-left: 3em;
+		}
 	}
 	.textArea-container{
 		flex: 2;
 		.message{
 			position: relative;
-			width: 100%;
+			display: inline-block;
+			height: 150px;
+			width: 91.5%;
+			outline-style: none;
+			font-family: 'Chivo', sans-serif;
+			background-color: transparent;
+			border: 1px solid black;
+			resize: none;
+			padding: 10px 15px 10px 15px;
+			font-size: 1.3em;
 		}
 	}
 	.form-button-container{
 		flex: 1;
+		display: flex;
+		.form-input-button{
+			background-color: transparent;
+			border: 1px solid #000000;
+			border-radius: 30px;
+			opacity: 1;
+			font-size: 1.3rem;
+			padding: 0.3em 4em;
+			margin-top: 20px;
+			color: rgba(0,0,0,.3);
+			cursor: pointer;
+			transition: 0.3s all ease;
+			outline-style: none;
+			&:hover{
+				color: black;
+				background-color: white;
+				border-radius: 0;
+			}
+		}
 	}
 	
+}
+
+
+@media(max-width: 1439px){
+	::-webkit-input-placeholder{
+		font-family: 'Chivo', sans-serif;
+		font-size: 1.2em;
+		color: rgba(0,0,0,.3);
+	}
+	#about-us{
+		.right-side-container{
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.form{
+		width: 100%;
+		justify-content: center;
+		
+		.name-and-lastName-container{
+			width: 100%;
+			.name{
+				width: 90%;
+			}
+			.last-name{
+				margin: 0;
+				width: 90%;
+			}
+		}
+		.email-and-phone-container{
+			.email{
+				width: 90%;
+			}
+			.phone{
+				margin: 0;
+				width: 90%;
+			}
+		}
+		.textArea-container{
+			.message{
+				width: 80%;
+			}
+		}
+		.form-button-container{
+			justify-content: flex-end;
+			align-items: flex-end;
+			padding-right: 35px;
+			.form-input-button{
+				font-size: 1.2rem;
+				padding: 0.2em 3em;
+			}
+		}
+	}
 }

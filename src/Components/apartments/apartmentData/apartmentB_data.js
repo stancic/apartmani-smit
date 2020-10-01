@@ -7,6 +7,7 @@ import apartmentPicture5 from '../../../images/apartment-b/apartmentB-kitchen.jp
 import apartmentPicture6 from '../../../images/apartment-b/apartmentB-terrace.jpg'
 
 export const apartmentBDataHR = {
+	name: "Apartman B",
 	description: "Nešto o apartmanu",
 	abovePrice: "cijene od",
 	price: "70 €",
@@ -15,6 +16,7 @@ export const apartmentBDataHR = {
 	galleryThumbnail: galleryThumbnail,
 	galleryTitle: "Galerija:",
 	equipment: "Opremljenost",
+	buttonText: "Pošalji upit",
 	availibility: "Dostupnost",
 	images: [
 		{

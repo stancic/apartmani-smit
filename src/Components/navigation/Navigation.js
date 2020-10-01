@@ -10,7 +10,7 @@ function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_t
 	document.addEventListener("scroll", event => {
 		let scrolled = document.scrollingElement.scrollTop;
 		
-		if(scrolled>200){
+		if(scrolled>50){
 			setScrollState(true);
 		} else {
 			setScrollState(false);
@@ -20,7 +20,7 @@ function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_t
 
 	const navScrolledStyle = {
 		backgroundColor: 'white',
-		color: 'black'
+		color: 'black',
 	}
 	
 	return (
@@ -37,7 +37,7 @@ function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_t
 						<Link smooth to="/#location" className="nav-link" style={scrollState ? {color: 'black'} : {}}>{secondLink}</Link>
 					</li>
 					<li className="nav-link-item">
-						<Link to="/#about-us" className="nav-link" style={scrollState ? {color: 'black'} : {}}>{thirdLink}</Link>
+						<Link smooth to="/#about-us" className="nav-link" style={scrollState ? {color: 'black'} : {}}>{thirdLink}</Link>
 					</li>
 				</ul>
 			</div>

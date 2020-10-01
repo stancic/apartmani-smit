@@ -7,23 +7,32 @@
 	background-color: transparent;
 	font-size: 18px;
 	padding: 5px 30px;
-	border: 1px solid #FFFFFF;
+	border: 1px solid black;
+	border-radius: 5px;
 	cursor: pointer;
-	color: $computerScreenNavLinksColor;
+	color: black;
+	outline-style: none;
+	transition: 0.5s all ease;
+	&:hover{
+		border-radius: 30px;
+	}
 }
 
 @media(max-width: 1024px){
 	.buttonStyle{
+		border: 1px solid white;
 		padding: 20px 60px;
-		font-size: 30px;
+		font-size: 23px;
+		color: white;
 	}
 }
 
 
 @media(max-width: 1000px){
 	.buttonStyle{
+		border: 1px solid white;
 		padding: 10px 35px;
 		font-size: 20px;
-		
+		color: white;
 	}
 }

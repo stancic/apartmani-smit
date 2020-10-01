@@ -7,6 +7,7 @@ import apartmentPicture5 from '../../../images/apartment-c/apartmentC-terrace.jp
 import apartmentPicture6 from '../../../images/apartment-c/apartmentC-terrace-sea-view.jpg'
 
 export const apartmentCDataHR = {
+	name: "Apartman C",
 	description: "Nešto o apartmanu",
 	abovePrice: "cijene od",
 	price: "70 €",
@@ -15,6 +16,7 @@ export const apartmentCDataHR = {
 	galleryThumbnail: galleryThumbnail,
 	galleryTitle: "Galerija:",
 	equipment: "Opremljenost",
+	buttonText: "Pošalji upit",
 	availibility: "Dostupnost",
 	images: [
 		{

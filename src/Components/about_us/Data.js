@@ -4,11 +4,11 @@ export const aboutUsHR = {
 	title: 'Upoznajte se s nama.',
 	text: 'Nešto o nama',
 	formTitle: { above: 'Slobodno pošaljite upit.', below: 'Ne grizemo :)'},
-	namePlaceholder: 'ime',
-	lastNamePlaceholder: 'prezime',
-	eMailPlaceholder: 'e-mail',
-	phonePlaceholder: 'mobitel',
+	namePlaceholder: 'ime...',
+	lastNamePlaceholder: 'prezime...',
+	eMailPlaceholder: 'e-mail...',
+	phonePlaceholder: 'mobitel...',
 	messagePlaceholder: 'vaša poruka...',
-	buttonText: 'pošalji',
+	buttonText: 'pošalji',	
 	familyPhoto: familyPhoto
 }

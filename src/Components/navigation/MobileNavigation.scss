@@ -10,34 +10,33 @@
 
 @media(max-width: 1024px){
 	.mobile-navigation-container{
-		display: inline-block;
-		
+		display: block;
 	}
 	.icon-holder{
 		z-index: 99;
 		position: fixed;
-		right: 3rem;
-		top: 2rem;
-		cursor: pointer;
+		right: 1rem;
+		top: 1.4rem;
+		cursor: pointer;	
 	}
 	.menu-open-icon{
-		font-size: 4rem;
+		font-size: 30px;
 	}
 	
 }
 
 @media(max-width: 1000px){
 	.mobile-navigation-container{
-		display: inline-block;
+		display: block;
 	}
 	.icon-holder{
 		z-index: 99;
 		position: fixed;
-		right: 3rem;
-		top: 2rem;
+		right: 1rem;
+		top: 1.4rem;
 		cursor: pointer;	
 	}
 	.menu-open-icon{
-		font-size: 38px;
+		font-size: 30px;
 	}
 }

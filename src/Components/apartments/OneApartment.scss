@@ -149,3 +149,13 @@
 		flex: 1.3;
 	}
 }
+
+@media(max-width: 1024px){
+	.apartment-detail-container{
+		display: none;
+	}
+
+	.price-menu-container{
+		display: none;
+	}
+}

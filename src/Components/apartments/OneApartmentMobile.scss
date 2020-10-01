@@ -1,0 +1,151 @@
+
+.mobile-apartment-container{
+	display: none;
+}
+
+@media(max-width: 1024px){
+	.mobile-apartment-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.apartment-detail-container-mobile{
+		width: 70%;
+		border: 1px solid black;
+		background-color: white;
+		box-shadow: 26px 23px 0px #00000029;
+	}
+	.apartment-name-container-mobile{
+		flex: 1;
+		padding: 1em;
+		.apartment-name-mobile{
+			font-weight: 800;
+		}
+	}
+	.apartment-description-container-mobile{
+		flex: 1;
+		padding: 1em;
+		border-bottom: 1px solid black;
+	}
+	.gallery-thumbnail-and-grid-container{
+		display: flex;
+		flex-direction: row;
+		flex: 3;
+		width: 100%;
+		height: 15em;
+	}
+	.gallery-thumbnail-and-title-container-mobile{
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+	.gallery-thumbnail-container-mobile{
+		flex: 6;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		.mobile-thumbnail{
+			margin-top: 7px;
+			width: 70%;
+			height: 80%;
+			border: 2px solid black;
+			cursor: pointer;
+		}
+	}
+	.gallery-title-container-mobile{
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		.gallery-title-mobile{
+			margin-right: 30px;
+		}
+	}
+	.gallery-grid-container-mobile{
+		flex: 2;
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(2, auto);
+		margin-top: 9.5px;
+		.image{
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			width: 92%;
+			height: 94%;
+			.image-mobile{
+				width: 100%;
+				height: 84%;
+				border: 2px solid black;
+				cursor: pointer;
+			}
+		}
+	}
+	.price-container-mobile{
+		flex: 1;
+		background-color: #EE9393;
+		padding: 10px 0 10px 0;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		.around-price{
+			color: white;
+			font-size: 1.3rem;
+		}
+		.price-mobile{
+			font-weight: 800;
+			color: #686868;
+		}
+	}
+	.buttons-container-mobile{
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		height: 3.5em;
+		cursor: pointer;
+		.equipment-container-mobile{
+			display: flex;
+			flex: 1;
+			width: 100%;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+			border-right: 1px solid black;
+			border-bottom: 1px solid black;
+			flex-direction: column;
+		}
+		.availibility-container-mobile{
+			display: flex;
+			flex: 1;
+			width: 100%;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+			border-right: 1px solid black;
+			border-bottom: 1px solid black;
+			flex-direction: column;
+
+		}
+		.price-menu-container-mobile{
+			display: flex;
+			flex: 1;
+			width: 100%;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+			border-bottom: 1px solid black;
+			flex-direction: column;
+		}
+	}
+	
+	.request-button-container-mobile{
+		flex: 1;
+		background-color: #686868;
+		color: white;
+		padding: 10px 0 10px 0;
+		font-size: 1.3rem;
+		cursor: pointer;
+	}
+}

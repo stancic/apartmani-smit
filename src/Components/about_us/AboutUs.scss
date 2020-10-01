@@ -53,3 +53,13 @@
 	}
 }
 
+@media(max-width: 1024px){
+	.about-us-data-container{
+		display: flex;
+		flex-direction: column;
+		.family-photo{
+			width: 80%;
+			height: 80%;
+		}
+	}
+}

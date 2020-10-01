@@ -1,11 +1,13 @@
 import React from 'react'
 import './OneApartment.scss'
+import './OneApartmentMobile.scss'
 import { AiOutlineUnorderedList } from 'react-icons/ai'
 import { BsCalendar } from 'react-icons/bs'
 import Button from './Button';
 
 function OneApartment({ description, abovePrice, price, belowPrice, 
-	equipment, availibility, galleryThumbnail, galleryTitle, images
+	equipment, availibility, galleryThumbnail, galleryTitle, images,
+	buttonText
 }) {
 	
 	const imagesGrid = images;
@@ -65,7 +67,7 @@ function OneApartment({ description, abovePrice, price, belowPrice,
 					</p>
 				</div>
 				<div className="price-button">
-					<Button button_text="Pošalji upit" />
+					<Button button_text={buttonText} />
 				</div>
 			</div>
 		</div>
