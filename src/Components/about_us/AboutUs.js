@@ -22,7 +22,7 @@ function AboutUs({title, text, formTitle, familyPhoto, namePlaceholder, lastName
 					</div>
 				</div>
 				<div className="right-side-container">
-					<div className="form-container">
+					<div className="form-container" id="about-us-message">
 						<h2 className="form-title">{formTitle.above}<br/>{formTitle.below}</h2>
 						<Form namePlaceholder={namePlaceholder} lastNamePlaceholder={lastNamePlaceholder} 
 							eMailPlaceholder={eMailPlaceholder} phonePlaceholder={phonePlaceholder}

@@ -4,6 +4,7 @@ import './OneApartmentMobile.scss'
 import { AiOutlineUnorderedList } from 'react-icons/ai'
 import { BsCalendar } from 'react-icons/bs'
 import Button from './Button';
+import { HashLink as Link } from 'react-router-hash-link'
 
 function OneApartment({ description, abovePrice, price, belowPrice, 
 	equipment, availibility, galleryThumbnail, galleryTitle, images,
@@ -67,7 +68,9 @@ function OneApartment({ description, abovePrice, price, belowPrice,
 					</p>
 				</div>
 				<div className="price-button">
-					<Button button_text={buttonText} />
+					<Link smooth to="/#about-us-message">
+						<Button button_text={buttonText} />
+					</Link>					
 				</div>
 			</div>
 		</div>

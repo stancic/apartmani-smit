@@ -1,7 +1,9 @@
 import React from 'react'
 import { AiOutlineUnorderedList } from 'react-icons/ai';
 import { BsCalendar } from 'react-icons/bs';
+import { HashLink as Link } from 'react-router-hash-link'
 import { FaEuroSign } from 'react-icons/fa'
+
 function OneApartmentMobile({ name, description, abovePrice, price, belowPrice, 
 	equipment, availibility, galleryThumbnail, galleryTitle, images, buttonText,
 	priceMenu
@@ -55,9 +57,11 @@ function OneApartmentMobile({ name, description, abovePrice, price, belowPrice,
 						<p>{priceMenu}</p>
 					</div>
 				</div>
-				<div className="request-button-container-mobile">
-					<p>{buttonText}</p>
-				</div>
+				<Link smooth to="/#about-us-message">
+					<div className="request-button-container-mobile">
+						<p>{buttonText}</p>
+					</div>
+				</Link>	
 			</div>
 		</div>
 	)

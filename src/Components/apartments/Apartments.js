@@ -24,6 +24,7 @@ function Apartments({title, priceMenu}) {
 				<OneApartment {...apartmentCDataHR}/>
 				<OneApartmentMobile {...apartmentADataHR} priceMenu={priceMenu}/>
 				<OneApartmentMobile {...apartmentBDataHR} priceMenu={priceMenu}/>
+				<OneApartmentMobile {...apartmentCDataHR} priceMenu={priceMenu}/>
 			</div>
 		</div>
 	)

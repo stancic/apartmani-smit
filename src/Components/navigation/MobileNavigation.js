@@ -4,10 +4,10 @@ import './MobileNavigation.scss'
 
 function MobileNavigation() {
 	const [scrollState, setScrollState] = useState(false);
+	const [clickedState, setClickedState] = useState('hamburger');
 
 	document.addEventListener("scroll", event => {
 		let scrolled = document.scrollingElement.scrollTop;
-		console.log(scrolled)
 		if(scrolled>680){
 			setScrollState(true);
 		} else {
@@ -15,10 +15,24 @@ function MobileNavigation() {
 		}
 	})
 
+	const handleIconClick = () => {
+		if(clickedState === 'hamburger'){
+			setClickedState('close');
+			console.log(clickedState)
+		} else {
+			setClickedState('hamburger');
+			console.log(clickedState)
+		}
+	
+
+	}
 	return (
 		<div className="mobile-navigation-container">
 			<div className="icon-holder">
-				<GiHamburgerMenu className="menu-open-icon"  style={scrollState ? {color: 'black'} : {}}/>
+				<GiHamburgerMenu className="menu-open-icon" 
+					style={scrollState ? {color: 'black'} : {}}
+					onClick={handleIconClick}	
+					/>
 			</div>
 		</div>
 	)

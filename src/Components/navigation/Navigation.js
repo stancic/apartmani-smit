@@ -16,7 +16,6 @@ function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_t
 			setScrollState(false);
 		}
 	})
-	console.log(scrollState)
 
 	const navScrolledStyle = {
 		backgroundColor: 'white',
