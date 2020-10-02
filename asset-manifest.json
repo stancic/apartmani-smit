@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/apartmani-smit/static/css/main.061576fb.chunk.css",
-    "main.js": "/apartmani-smit/static/js/main.2d595f61.chunk.js",
-    "main.js.map": "/apartmani-smit/static/js/main.2d595f61.chunk.js.map",
+    "main.css": "/apartmani-smit/static/css/main.e9513c5e.chunk.css",
+    "main.js": "/apartmani-smit/static/js/main.39b21f47.chunk.js",
+    "main.js.map": "/apartmani-smit/static/js/main.39b21f47.chunk.js.map",
     "runtime-main.js": "/apartmani-smit/static/js/runtime-main.46190169.js",
     "runtime-main.js.map": "/apartmani-smit/static/js/runtime-main.46190169.js.map",
-    "static/js/2.4b513e2c.chunk.js": "/apartmani-smit/static/js/2.4b513e2c.chunk.js",
-    "static/js/2.4b513e2c.chunk.js.map": "/apartmani-smit/static/js/2.4b513e2c.chunk.js.map",
+    "static/js/2.01fb1da0.chunk.js": "/apartmani-smit/static/js/2.01fb1da0.chunk.js",
+    "static/js/2.01fb1da0.chunk.js.map": "/apartmani-smit/static/js/2.01fb1da0.chunk.js.map",
     "index.html": "/apartmani-smit/index.html",
-    "precache-manifest.fa6604d78feb8582965fb4ec82c93c19.js": "/apartmani-smit/precache-manifest.fa6604d78feb8582965fb4ec82c93c19.js",
+    "precache-manifest.8fda9c1ebf4ce4cd40d871a8806e9a4d.js": "/apartmani-smit/precache-manifest.8fda9c1ebf4ce4cd40d871a8806e9a4d.js",
     "service-worker.js": "/apartmani-smit/service-worker.js",
-    "static/css/main.061576fb.chunk.css.map": "/apartmani-smit/static/css/main.061576fb.chunk.css.map",
-    "static/js/2.4b513e2c.chunk.js.LICENSE.txt": "/apartmani-smit/static/js/2.4b513e2c.chunk.js.LICENSE.txt",
+    "static/css/main.e9513c5e.chunk.css.map": "/apartmani-smit/static/css/main.e9513c5e.chunk.css.map",
+    "static/js/2.01fb1da0.chunk.js.LICENSE.txt": "/apartmani-smit/static/js/2.01fb1da0.chunk.js.LICENSE.txt",
     "static/media/apartmentA-bathroom.jpg": "/apartmani-smit/static/media/apartmentA-bathroom.aefcad01.jpg",
     "static/media/apartmentA-bedroom-2.jpg": "/apartmani-smit/static/media/apartmentA-bedroom-2.d428d29c.jpg",
     "static/media/apartmentA-bedroom.jpg": "/apartmani-smit/static/media/apartmentA-bedroom.05d15e5e.jpg",
@@ -38,8 +38,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.46190169.js",
-    "static/js/2.4b513e2c.chunk.js",
-    "static/css/main.061576fb.chunk.css",
-    "static/js/main.2d595f61.chunk.js"
+    "static/js/2.01fb1da0.chunk.js",
+    "static/css/main.e9513c5e.chunk.css",
+    "static/js/main.39b21f47.chunk.js"
   ]
 }
