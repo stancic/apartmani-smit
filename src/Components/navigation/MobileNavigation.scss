@@ -12,6 +12,10 @@
 	.mobile-navigation-container{
 		display: block;
 		position: relative;
+		*:focus {
+			outline: 0;
+			outline: none;
+		}
 	}
 	.icon-holder{
 		z-index: 2;
@@ -19,12 +23,28 @@
 		right: 1rem;
 		top: 2.2rem;
 		cursor: pointer;	
+		outline: none;
+		-webkit-touch-callout: none;
+		-webkit-tap-highlight-color: transparent;
+		*:focus {
+			outline: 0;
+			outline: none;
+			}
 	}
 	.menu-open-icon{
 		font-size: 30px;
+		*:focus {
+			outline: 0;
+			outline: none;
+		}
 	}
 	.menu-close-icon{
 		font-size: 2em;
+		outline: none;
+		*:focus {
+			outline: 0;
+			outline: none;
+		}
 	}
 	//below are mobile menu container styles
 	.mobile-menu-container{
