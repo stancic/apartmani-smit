@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7872056e6aca7897379696d9a6c5647e",
+    "revision": "ca35ef29005b5049e00d7465479340ff",
     "url": "/apartmani-smit/index.html"
   },
   {
-    "revision": "c36d15aaa315e4af60b1",
-    "url": "/apartmani-smit/static/css/main.e9513c5e.chunk.css"
+    "revision": "e50e856ab807b1231849",
+    "url": "/apartmani-smit/static/css/main.8de85db4.chunk.css"
   },
   {
     "revision": "5a746d3f4ec28ff57b65",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/apartmani-smit/static/js/2.01fb1da0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c36d15aaa315e4af60b1",
+    "revision": "e50e856ab807b1231849",
     "url": "/apartmani-smit/static/js/main.39b21f47.chunk.js"
   },
   {
