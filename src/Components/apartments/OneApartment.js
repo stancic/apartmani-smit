@@ -68,7 +68,7 @@ function OneApartment({ description, abovePrice, price, belowPrice,
 					</p>
 				</div>
 				<div className="price-button">
-					<Link smooth to="/#about-us-message">
+					<Link smooth to="/#/about-us-message">
 						<Button button_text={buttonText} />
 					</Link>					
 				</div>

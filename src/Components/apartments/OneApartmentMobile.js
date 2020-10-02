@@ -57,7 +57,7 @@ function OneApartmentMobile({ name, description, abovePrice, price, belowPrice,
 						<p>{priceMenu}</p>
 					</div>
 				</div>
-				<Link smooth to="/#about-us-message" style={{textDecoration:'none'}}>
+				<Link smooth to="/#/about-us-message" style={{textDecoration:'none'}}>
 					<div className="request-button-container-mobile">
 						<p>{buttonText}</p>
 					</div>

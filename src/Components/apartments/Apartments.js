@@ -11,7 +11,7 @@ function Apartments({title, priceMenu}) {
 		console.log("hehe");
 	}
 	return (
-		<div id="apartments" style={{backgroundColor: "#A7C4FF"}}>
+		<div id="/apartments" className="apartments">
 			<div className="apartment-title-container">
 				<h1 className="title">{title}</h1>
 			</div>

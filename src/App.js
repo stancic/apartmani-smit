@@ -15,7 +15,7 @@ function App() {
 	return (
 		<div>
 			<Navigation {...linkHR}/>
-			<MobileNavigation />
+			<MobileNavigation {...linkHR}/>
 			<Home {...titleHR} />
 			<Apartments {...informationHR}/>
 			<Location {...locationDetailsHR}/>	

@@ -2,7 +2,7 @@ import React from 'react'
 import './Location.scss'
 function Location({title, locationDetails}) {
 	return (
-		<div id="location" style={{backgroundColor: '#FFA7A7'}}>
+		<div id="/location" className="location">
 			<div className="location-title-container">
 				<h1 className="title">{title}</h1>
 			</div>

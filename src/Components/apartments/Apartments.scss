@@ -1,13 +1,16 @@
-#apartments{
+.apartments{
+	padding-top: 40px;
+	background-color: #A7C4FF;
 	padding-top: 40px;
 }
 
 .apartment-title-container{
-	position: relative;
 	background-color: #A7C4FF;
+	position: relative;
 	margin-left: 60px;
 	margin-bottom: 60px;
 	.title{
+		display: inline-block;
 		padding: 0;
 		font-weight: 800;
 		font-size: 48px;

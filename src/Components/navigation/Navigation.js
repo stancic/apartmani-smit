@@ -27,16 +27,16 @@ function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_t
 			<div className="nav-links-container">
 				<ul>
 					<li className="nav-link-item">
-						<Link smooth to="/#home" className="nav-title nav-link" style={scrollState ? {color: 'black'} : {}}>{title}</Link>
+						<Link smooth to="/#/apartmani-smit" className="nav-title nav-link" style={scrollState ? {color: 'black'} : {}}>{title}</Link>
 					</li>
 					<li className="nav-link-item">
-						<Link smooth to="/#apartments" className="nav-link" style={scrollState ? {color: 'black'} : {}}>{firstLink}</Link>
+						<Link smooth to="/#/apartments" className="nav-link" style={scrollState ? {color: 'black'} : {}}>{firstLink}</Link>
 					</li>
 					<li className="nav-link-item">
-						<Link smooth to="/#location" className="nav-link" style={scrollState ? {color: 'black'} : {}}>{secondLink}</Link>
+						<Link smooth to="/#/location" className="nav-link" style={scrollState ? {color: 'black'} : {}}>{secondLink}</Link>
 					</li>
 					<li className="nav-link-item">
-						<Link smooth to="/#about-us" className="nav-link" style={scrollState ? {color: 'black'} : {}}>{thirdLink}</Link>
+						<Link smooth to="/#/about-us" className="nav-link" style={scrollState ? {color: 'black'} : {}}>{thirdLink}</Link>
 					</li>
 				</ul>
 			</div>
@@ -46,7 +46,9 @@ function Navigation({ title, firstLink, secondLink, thirdLink, contact, button_t
 						<Link to="/" className="nav-contact contact"  style={scrollState ? {color: 'black'} : {}}>{contact}</Link>
 					</li>
 					<li className="nav-contact-item">
-						<Link smooth to="/#about-us-message" style={{textDecoration:'none'}}><Button button_text={button_text} style={scrollState ? {color: 'black', border: '1px solid black'} : {}}/></Link>
+						<Link smooth to="/#/about-us-message" style={{textDecoration:'none'}}>
+							<Button button_text={button_text} style={scrollState ? {color: 'black', border: '1px solid black'} : {}}/>
+						</Link>
 					</li>
 				</ul>
 			</div>

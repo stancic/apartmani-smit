@@ -8,7 +8,7 @@ function AboutUs({title, text, formTitle, familyPhoto, namePlaceholder, lastName
 	eMailPlaceholder, phonePlaceholder, messagePlaceholder, buttonText}) {
 	
 	return (
-		<div id="about-us" style={{backgroundColor: '#E2C26B'}}>
+		<div id="/about-us" className="about-us">
 			<div className="about-us-title-container">
 				<h1 className="title">{title}</h1>
 			</div>
@@ -22,7 +22,7 @@ function AboutUs({title, text, formTitle, familyPhoto, namePlaceholder, lastName
 					</div>
 				</div>
 				<div className="right-side-container">
-					<div className="form-container" id="about-us-message">
+					<div className="form-container" id="/about-us-message">
 						<h2 className="form-title">{formTitle.above}<br/>{formTitle.below}</h2>
 						<Form namePlaceholder={namePlaceholder} lastNamePlaceholder={lastNamePlaceholder} 
 							eMailPlaceholder={eMailPlaceholder} phonePlaceholder={phonePlaceholder}
