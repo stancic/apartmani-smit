@@ -5,18 +5,24 @@ import { AiOutlineUnorderedList } from 'react-icons/ai'
 import { BsCalendar } from 'react-icons/bs'
 import Button from './Button';
 import { HashLink as Link } from 'react-router-hash-link'
+import { useDispatch } from 'react-redux'
+import { openGallery } from '../../reducers/galleryReducer'
 
 function OneApartment({ description, abovePrice, price, belowPrice, 
 	equipment, availibility, galleryThumbnail, galleryTitle, images,
 	buttonText
 }) {
-	
+
+	const dispatch = useDispatch();
 	const imagesGrid = images;
+	const handleGalleryShow = () => {
+		dispatch(openGallery());
+	}
 	return (
-		
 		<div className="apartment-detail-container">
 			<div className="gallery-thumbnail-container">
-				<img src={galleryThumbnail} alt="gallery thumbnail" className="gallery-thumbnail"/>
+				<img src={galleryThumbnail} alt="gallery thumbnail" className="gallery-thumbnail" 
+					onClick={handleGalleryShow}/>
 			</div>
 			<div className="gallery-apartmentDesc-container">
 				<div className="apartment-description-container">
@@ -30,7 +36,7 @@ function OneApartment({ description, abovePrice, price, belowPrice,
 				<div className="image-gallery-container">
 					{imagesGrid.map(image => {
 						return(
-							<div className="image-container" key={image.id}>
+							<div className="image-container" key={image.id} onClick={handleGalleryShow}>
 								<img src={image.image} alt={image.description} className="image"/>
 							</div>
 						)
