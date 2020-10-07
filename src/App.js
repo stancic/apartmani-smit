@@ -11,17 +11,21 @@ import Location from './Components/location/Location'
 import { locationDetailsHR } from './Components/location/Data'
 import AboutUs from './Components/about_us/AboutUs'
 import { aboutUsHR } from './Components/about_us/Data'
+import Gallery from './Components/apartments/gallery/Gallery'
+
 function App() {
 	return (
 		<div>
+			
 			<Navigation {...linkHR}/>
 			<MobileNavigation {...linkHR}/>
 			<Home {...titleHR} />
+			<Gallery />
 			<Apartments {...informationHR}/>
 			<Location {...locationDetailsHR}/>	
 			<AboutUs {...aboutUsHR} />
 		</div>
-  );
+);
 }
 
 export default App

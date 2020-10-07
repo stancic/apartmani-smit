@@ -5,7 +5,6 @@ import { apartmentBDataHR } from './apartmentData/apartmentB_data'
 import { apartmentCDataHR } from './apartmentData/apartmentC_data'
 import OneApartment from './OneApartment'
 import OneApartmentMobile from './OneApartmentMobile'
-import Gallery from './gallery/Gallery'
 
 function Apartments({title, priceMenu}) {
 	const handlePriceMenuClick = () => {
@@ -26,9 +25,6 @@ function Apartments({title, priceMenu}) {
 				<OneApartmentMobile {...apartmentADataHR} priceMenu={priceMenu}/>
 				<OneApartmentMobile {...apartmentBDataHR} priceMenu={priceMenu}/>
 				<OneApartmentMobile {...apartmentCDataHR} priceMenu={priceMenu}/>
-			</div>
-			<div className="galleryOpened">
-				<Gallery />
 			</div>
 		</div>
 	)

@@ -17,6 +17,7 @@ function OneApartment({ description, abovePrice, price, belowPrice,
 	const imagesGrid = images;
 	const handleGalleryShow = () => {
 		dispatch(openGallery());
+		document.body.style.overflow = "hidden";
 	}
 	return (
 		<div className="apartment-detail-container">

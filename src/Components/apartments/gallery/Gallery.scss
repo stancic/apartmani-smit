@@ -1,0 +1,40 @@
+.gallery-container{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.507);
+	z-index: 99;
+	left: 100%;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	.image-container{
+		background-color: white;
+		position: relative;
+		width: 60%;
+		height: 90%;
+		display: flex;
+		flex-direction: row;
+		z-index: 99;
+		align-items: center;
+		justify-content: center;
+	}
+	.arrow-back-container{
+		position: absolute;
+		background-color: red;
+		z-index: 100;
+		left: 0;
+	}
+	.arrow-forward-container{
+		position: absolute;
+		background-color: blue;
+		z-index: 100;
+		right: 0;
+	}
+	.close-gallery-container{
+		position: absolute;
+		background-color: green;
+		top: 0;
+		right: 0;
+	}
+}
