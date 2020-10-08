@@ -5,11 +5,17 @@ import { apartmentBDataHR } from './apartmentData/apartmentB_data'
 import { apartmentCDataHR } from './apartmentData/apartmentC_data'
 import OneApartment from './OneApartment'
 import OneApartmentMobile from './OneApartmentMobile'
+import { loadImages } from '../../reducers/imagesReducer'
+import { useDispatch } from 'react-redux'
+
 
 function Apartments({title, priceMenu}) {
 	const handlePriceMenuClick = () => {
 		console.log("hehe");
 	}
+	const dispatch = useDispatch();
+	const allImages = [].concat(apartmentADataHR.images).concat(apartmentBDataHR.images).concat(apartmentCDataHR.images)
+	dispatch(loadImages(allImages))
 	return (
 		<div id="/apartments" className="apartments">
 			<div className="apartment-title-container">

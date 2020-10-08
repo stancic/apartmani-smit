@@ -16,12 +16,11 @@ import Gallery from './Components/apartments/gallery/Gallery'
 function App() {
 	return (
 		<div>
-			
 			<Navigation {...linkHR}/>
 			<MobileNavigation {...linkHR}/>
 			<Home {...titleHR} />
-			<Gallery />
 			<Apartments {...informationHR}/>
+			<Gallery />
 			<Location {...locationDetailsHR}/>	
 			<AboutUs {...aboutUsHR} />
 		</div>

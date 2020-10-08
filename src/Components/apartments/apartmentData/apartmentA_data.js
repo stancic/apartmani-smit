@@ -13,7 +13,6 @@ export const apartmentADataHR = {
 	price: "70 €",
 	belowPrice: "po noćenju",
 	equipmentList: ["Wifi", "parking", "satelitska tv", "klima"],
-	galleryThumbnail: galleryThumbnail,
 	galleryTitle: "Galerija:",
 	equipment: "Opremljenost",
 	availibility: "Dostupnost",
@@ -21,31 +20,36 @@ export const apartmentADataHR = {
 	images: [
 		{
 			id: 0,
+			image: galleryThumbnail,
+			description: 'Gallery thumbnail'
+		},
+		{
+			id: 1,
 			image: apartmentPicture1,
 			description: 'Apartment bathroom'
 		},
 		{	
-			id: 1,
+			id: 2,
 			image: apartmentPicture2,
 			description: 'Apartment bedroom'
 		},
 		{	
-			id: 2,
+			id: 3,
 			image: apartmentPicture3,
 			description: 'Apartment second bedroom'
 		},
 		{
-			id: 3,
+			id: 4,
 			image: apartmentPicture4,
 			description: 'Apartment dining room'
 		},
 		{
-			id: 4,
+			id: 5,
 			image: apartmentPicture5,
 			description: 'Apartment kitchen'
 		},
 		{
-			id: 5,
+			id: 6,
 			image: apartmentPicture6,
 			description: 'Apartment terrace'
 		} 

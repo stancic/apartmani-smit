@@ -13,39 +13,43 @@ export const apartmentBDataHR = {
 	price: "70 €",
 	belowPrice: "po noćenju",
 	equipmentList: ["Wifi", "parking", "satelitska tv", "klima"],
-	galleryThumbnail: galleryThumbnail,
 	galleryTitle: "Galerija:",
 	equipment: "Opremljenost",
 	buttonText: "Pošalji upit",
 	availibility: "Dostupnost",
 	images: [
 		{
-			id: 0,
+			id: 7,
+			image: galleryThumbnail,
+			description: 'Gallery thumbnail'
+		},
+		{
+			id: 8,
 			image: apartmentPicture1,
 			description: 'Apartment bathroom'
 		},
 		{	
-			id: 1,
+			id: 9,
 			image: apartmentPicture2,
 			description: 'Apartment bedroom'
 		},
 		{	
-			id: 2,
+			id: 10,
 			image: apartmentPicture3,
 			description: 'Apartment second bedroom'
 		},
 		{
-			id: 3,
+			id: 11,
 			image: apartmentPicture4,
 			description: 'Apartment dining room'
 		},
 		{
-			id: 4,
+			id: 12,
 			image: apartmentPicture5,
 			description: 'Apartment kitchen'
 		},
 		{
-			id: 5,
+			id: 13,
 			image: apartmentPicture6,
 			description: 'Apartment terrace'
 		} 

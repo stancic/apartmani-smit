@@ -7,23 +7,24 @@ import Button from './Button';
 import { HashLink as Link } from 'react-router-hash-link'
 import { useDispatch } from 'react-redux'
 import { openGallery } from '../../reducers/galleryReducer'
-
 function OneApartment({ description, abovePrice, price, belowPrice, 
-	equipment, availibility, galleryThumbnail, galleryTitle, images,
+	equipment, availibility, galleryTitle, images,
 	buttonText
 }) {
 
 	const dispatch = useDispatch();
-	const imagesGrid = images;
-	const handleGalleryShow = () => {
-		dispatch(openGallery());
+	const imagesGrid = images.slice(1);
+	const handleGalleryShow = (id) => {
+		dispatch(openGallery(id));
 		document.body.style.overflow = "hidden";
 	}
+
+
 	return (
 		<div className="apartment-detail-container">
 			<div className="gallery-thumbnail-container">
-				<img src={galleryThumbnail} alt="gallery thumbnail" className="gallery-thumbnail" 
-					onClick={handleGalleryShow}/>
+				<img src={images[0].image} alt="gallery thumbnail" className="gallery-thumbnail" 
+					onClick={()=>handleGalleryShow(images[0].id)}/>
 			</div>
 			<div className="gallery-apartmentDesc-container">
 				<div className="apartment-description-container">
@@ -37,7 +38,7 @@ function OneApartment({ description, abovePrice, price, belowPrice,
 				<div className="image-gallery-container">
 					{imagesGrid.map(image => {
 						return(
-							<div className="image-container" key={image.id} onClick={handleGalleryShow}>
+							<div className="image-container" key={image.id} onClick={()=>handleGalleryShow(image.id)}>
 								<img src={image.image} alt={image.description} className="image"/>
 							</div>
 						)
