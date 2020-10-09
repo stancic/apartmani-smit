@@ -42,7 +42,7 @@ function OneApartmentMobile({ 	name, description, abovePrice, price, belowPrice,
 						{imagesGrid.map(image => {
 						return(
 							<div className="image" key={image.id}>
-								<img src={image.image} alt={image.description} className="image-mobile" onClick={()=>handleGalleryShow(images.id)}/>
+								<img src={image.image} alt={image.description} className="image-mobile" onClick={()=>handleGalleryShow(image.id)}/>
 							</div>
 						)
 					})}
