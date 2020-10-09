@@ -4,37 +4,39 @@
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.507);
 	z-index: 99;
-	left: 100%;
 	top: 0;
 	justify-content: center;
 	align-items: center;
 	.image-container{
-		background-color: white;
-		position: relative;
-		width: 60%;
-		height: 90%;
 		display: flex;
 		flex-direction: row;
 		z-index: 99;
 		align-items: center;
 		justify-content: center;
+		.opened-image{
+			width: 70%;
+			height: 70%;
+		}
+	}
+	.gallery-icon{
+		font-size: 2.5em;
+		cursor: pointer;
+		background-color: rgba(0, 0, 0, 0.418);
+		color: rgba(255, 255, 255, 0.541);
 	}
 	.arrow-back-container{
 		position: absolute;
-		background-color: red;
 		z-index: 100;
-		left: 0;
+		left: 5px;
 	}
 	.arrow-forward-container{
 		position: absolute;
-		background-color: blue;
 		z-index: 100;
-		right: 0;
+		right: 5px;
 	}
 	.close-gallery-container{
 		position: absolute;
-		background-color: green;
-		top: 0;
-		right: 0;
+		top: 5px;
+		right: 5px;
 	}
 }

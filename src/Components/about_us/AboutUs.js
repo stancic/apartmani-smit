@@ -4,8 +4,9 @@ import Form from './form/Form'
 
 // handleSubmit, namePlaceholder, lastNamePlaceholder, eMailPlaceholder, phonePlaceholder, messagePlaceholder, buttonText
 
-function AboutUs({title, text, formTitle, familyPhoto, namePlaceholder, lastNamePlaceholder, 
-	eMailPlaceholder, phonePlaceholder, messagePlaceholder, buttonText}) {
+function AboutUs({	title, text, formTitle, familyPhoto, namePlaceholder, lastNamePlaceholder, 
+					eMailPlaceholder, phonePlaceholder, messagePlaceholder, buttonText}) 
+{
 	
 	return (
 		<div id="/about-us" className="about-us">

@@ -7,10 +7,11 @@ import Button from './Button';
 import { HashLink as Link } from 'react-router-hash-link'
 import { useDispatch } from 'react-redux'
 import { openGallery } from '../../reducers/galleryReducer'
+
 function OneApartment({ description, abovePrice, price, belowPrice, 
-	equipment, availibility, galleryTitle, images,
-	buttonText
-}) {
+						equipment, availibility, galleryTitle, images,
+						buttonText}) 
+{
 
 	const dispatch = useDispatch();
 	const imagesGrid = images.slice(1);

@@ -38,7 +38,7 @@ function MobileNavigation({ title, firstLink, secondLink, thirdLink, contact, ma
 		if(!linkClickState) setLinkClickState(true);
 		setClickedState('hamburger');
 		setLinkClickState(false);
-		document.body.style.overflow = "scroll";
+		document.body.style.overflow = "overlay";
 	}
 
 	return (

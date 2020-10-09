@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './Form.scss'
 
-function Form({namePlaceholder, lastNamePlaceholder, eMailPlaceholder, phonePlaceholder, messagePlaceholder, buttonText}) {
+function Form({	namePlaceholder, lastNamePlaceholder, eMailPlaceholder, 
+				phonePlaceholder, messagePlaceholder, buttonText}) 
+{
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		console.log('submit');

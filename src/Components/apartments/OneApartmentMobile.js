@@ -3,12 +3,19 @@ import { AiOutlineUnorderedList } from 'react-icons/ai';
 import { BsCalendar } from 'react-icons/bs';
 import { HashLink as Link } from 'react-router-hash-link'
 import { FaEuroSign } from 'react-icons/fa'
+import { openGallery } from '../../reducers/galleryReducer'
+import { useDispatch } from 'react-redux';
 
-function OneApartmentMobile({ name, description, abovePrice, price, belowPrice, 
-	equipment, availibility, galleryThumbnail, galleryTitle, images, buttonText,
-	priceMenu
-}) {
-	const imagesGrid = images;
+function OneApartmentMobile({ 	name, description, abovePrice, price, belowPrice, 
+								equipment, availibility, galleryThumbnail, galleryTitle, images, buttonText,
+								priceMenu}) 
+{
+	const imagesGrid = images.slice(1);
+	const dispatch = useDispatch();
+	const handleGalleryShow = (id) => {
+		dispatch(openGallery(id));
+		document.body.style.overflow = "hidden";
+	}
 
 	return (
 		<div className="mobile-apartment-container">	
@@ -23,7 +30,9 @@ function OneApartmentMobile({ name, description, abovePrice, price, belowPrice,
 				<div className="gallery-thumbnail-and-grid-container">
 					<div className="gallery-thumbnail-and-title-container-mobile">
 						<div className="gallery-thumbnail-container-mobile">
-							<img src={galleryThumbnail} alt="gallery thumbnail" className="mobile-thumbnail"/>
+							<img src={images[0].image} alt="gallery thumbnail" className="mobile-thumbnail"
+								onClick={()=>handleGalleryShow(images[0].id)}
+							/>
 						</div>
 						<div className="gallery-title-container-mobile">
 							<p className="gallery-title-mobile">{galleryTitle}</p>
@@ -33,7 +42,7 @@ function OneApartmentMobile({ name, description, abovePrice, price, belowPrice,
 						{imagesGrid.map(image => {
 						return(
 							<div className="image" key={image.id}>
-								<img src={image.image} alt={image.description} className="image-mobile"/>
+								<img src={image.image} alt={image.description} className="image-mobile" onClick={()=>handleGalleryShow(images.id)}/>
 							</div>
 						)
 					})}

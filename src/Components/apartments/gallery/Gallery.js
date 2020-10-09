@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { closeGallery } from '../../../reducers/galleryReducer'
+import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineClose} from 'react-icons/ai'
 import './Gallery.scss'
 
 function Gallery() {
@@ -17,7 +18,7 @@ function Gallery() {
 
 	const handleGalleryClose = () => {
 		dispatch(closeGallery());
-		document.body.style.overflow = "scroll";
+		document.body.style.overflow = "overlay";
 	}
 
 	const handlePrevImage = () => {
@@ -31,17 +32,17 @@ function Gallery() {
 	}
 	console.log(imgID)
 	return (
-		<div className="gallery-container" style={galleryStatus ? {display: 'flex', left:'0%'} : {'display': 'none'}}>
-				<div className="image-container" id="imageContainer">
-					<img src={images[imgID].image} alt="apartment"/>
+		<div className="gallery-container" style={galleryStatus ? {display: 'flex'} : {'display': 'none'}}>
+				<div className="image-container" id="image-container">
+					<img src={images[imgID].image} alt="apartment" className="opened-image"/>
 					<div className="arrow-back-container" onClick={handlePrevImage}>
-						back
+						<AiOutlineArrowLeft className="gallery-icon"/>
 					</div>
 					<div className="arrow-forward-container" onClick={handleNextImage}>
-						forw
+						<AiOutlineArrowRight className="gallery-icon"/>
 					</div>
 					<div className="close-gallery-container" onClick={handleGalleryClose}>
-						x
+						<AiOutlineClose className="gallery-icon"/>
 					</div>
 				</div>
 		</div>
