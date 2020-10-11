@@ -23,7 +23,7 @@
 	padding-bottom: 60px;
 }
 
-.price-menu-container{
+.price-menu-button-container{
 	background-color: rgb(255, 255, 249);
 	display: inline-block;
 	margin-bottom: 30px;
@@ -50,5 +50,8 @@
 		.title{
 			font-size: 38px;
 		}
+	}
+	.price-menu-button-container{
+		display: none;
 	}
 }

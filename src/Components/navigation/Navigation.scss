@@ -83,8 +83,14 @@
 
 
 //responsivness starts here
-@media (max-width: 1024px){
+@media (max-width: 1050px){
 	.nav-container{
 		display: none;
+	}
+}
+
+@media (max-width: 1130px){
+	.nav-contact-container{
+		padding: 25px 0px 25px 0;
 	}
 }

@@ -22,6 +22,7 @@ function MobileNavigation({ title, firstLink, secondLink, thirdLink, contact, ma
 		if(clickedState === 'hamburger'){
 			setClickedState('close');
 			document.body.style.overflow = "hidden";
+			document.querySelector(".mobile-menu-container").style.overflow = "scroll";
 		} else {
 			setClickedState('hamburger');
 			document.body.style.overflow = "scroll";

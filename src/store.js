@@ -3,11 +3,13 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import galleryReducer from './reducers/galleryReducer'
 import imagesReducer from './reducers/imagesReducer'
+import menuReducer from './reducers/menuReducer'
 
 
 const reducer = combineReducers({
 	galleryStatus: galleryReducer,
-	imagesStatus: imagesReducer
+	imagesStatus: imagesReducer,
+	menuStatus: menuReducer
 })
 
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)))

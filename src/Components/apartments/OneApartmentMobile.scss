@@ -89,13 +89,16 @@
 	}
 	.price-container-mobile{
 		flex: 1;
+		display: flex;
 		background-color: #EE9393;
-		padding: 5px 0 5px 0;
 		border-top: 1px solid black;
 		border-bottom: 1px solid black;
+		justify-content: center;
+		align-items: center;
 		.around-price{
 			color: white;
 			font-size: 1rem;
+			margin: 10px 0 10px 0;
 		}
 		.price-mobile{
 			font-weight: 800;
@@ -119,6 +122,9 @@
 			border-bottom: 1px solid black;
 			flex-direction: column;
 			font-size: 13px;
+			p{
+				margin: 0;
+			}
 		}
 		.availibility-container-mobile{
 			display: flex;
@@ -131,6 +137,9 @@
 			border-bottom: 1px solid black;
 			flex-direction: column;
 			font-size: 13px;
+			p{
+				margin: 0;
+			}
 		}
 		.price-menu-container-mobile{
 			display: flex;
@@ -142,6 +151,9 @@
 			border-bottom: 1px solid black;
 			flex-direction: column;
 			font-size: 13px;
+			p{
+				margin: 0;
+			}
 		}
 	}
 	
@@ -153,6 +165,9 @@
 		font-size: 1.2rem;
 		outline-style: none;
 		cursor: pointer;
+		p{
+			margin: 10px 0 10px 0;
+		}
 	}
 }
 

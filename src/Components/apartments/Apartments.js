@@ -7,21 +7,24 @@ import OneApartment from './OneApartment'
 import OneApartmentMobile from './OneApartmentMobile'
 import { loadImages } from '../../reducers/imagesReducer'
 import { useDispatch } from 'react-redux'
+import { openExtraDataMenu } from '../../reducers/menuReducer'
 
 
 function Apartments({title, priceMenu}) {
-	const handlePriceMenuClick = () => {
-		console.log("hehe");
-	}
 	const dispatch = useDispatch();
 	const allImages = [].concat(apartmentADataHR.images).concat(apartmentBDataHR.images).concat(apartmentCDataHR.images)
-	dispatch(loadImages(allImages))
+	const handlePriceMenuOpen = () => {
+		dispatch(openExtraDataMenu());
+		document.body.style.overflow = "hidden";
+	}
+	
+	dispatch(loadImages(allImages));
 	return (
 		<div id="/apartments" className="apartments">
 			<div className="apartment-title-container">
 				<h1 className="title">{title}</h1>
 			</div>
-			<div className="price-menu-container" onClick={handlePriceMenuClick}>
+			<div className="price-menu-button-container" onClick={handlePriceMenuOpen}>
 				<p className="price-title">{priceMenu}</p>
 			</div>
 			<div className="apartment-detail">

@@ -5,6 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link'
 import { FaEuroSign } from 'react-icons/fa'
 import { openGallery } from '../../reducers/galleryReducer'
 import { useDispatch } from 'react-redux';
+import { openExtraDataMenu } from '../../reducers/menuReducer';
 
 function OneApartmentMobile({ 	name, description, abovePrice, price, belowPrice, 
 								equipment, availibility, galleryThumbnail, galleryTitle, images, buttonText,
@@ -17,6 +18,11 @@ function OneApartmentMobile({ 	name, description, abovePrice, price, belowPrice,
 		document.body.style.overflow = "hidden";
 	}
 
+	const handlePriceMenuOpen = () => {
+		dispatch(openExtraDataMenu());
+		document.body.style.overflow = "hidden";
+	}
+	
 	return (
 		<div className="mobile-apartment-container">	
 			<div className="apartment-detail-container-mobile">
@@ -54,15 +60,15 @@ function OneApartmentMobile({ 	name, description, abovePrice, price, belowPrice,
 				</div>
 				<div className="buttons-container-mobile">
 					<div className="equipment-container-mobile">
-						<AiOutlineUnorderedList />
+						<AiOutlineUnorderedList className="equipment-icon"/>
 						<p>{equipment}</p>
 					</div> 
 					<div className="availibility-container-mobile">
-						<BsCalendar />
+						<BsCalendar className="availibility-icon"/>
 						<p>{availibility}</p>
 					</div> 	
-					<div className="price-menu-container-mobile">
-						<FaEuroSign />
+					<div className="price-menu-container-mobile" onClick={handlePriceMenuOpen}>
+						<FaEuroSign className="price-icon"/>
 						<p>{priceMenu}</p>
 					</div>
 				</div>

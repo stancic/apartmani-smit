@@ -1,0 +1,44 @@
+.price-menu-opened-container{
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.507);
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+	top: 0;
+	hr{
+		border: 1px solid #dee2e6;
+	}
+	.close-menu-container{
+		position: absolute;
+		font-size: 2.5em;
+		top: 5px;
+		right: 5px;
+		.menu-icon{
+			background-color: rgba(0, 0, 0, 0.418);
+			color: rgba(255, 255, 255, 0.541);
+		}
+	}
+	.price-menu-title-and-table-container{
+		width: 70%;
+		height: 50%;
+		background-color: white;
+		.price-menu-title-container{
+			.price-menu-title{
+				margin: 10px 0 10px 20px;
+			}
+		}
+		.price-menu-table-container{
+			margin-top: 20px;
+		}
+	}
+}
+
+@media (max-height: 515px){
+	.price-menu-opened-container{
+		.price-menu-title-and-table-container{
+			height: auto;
+		}
+	}
+}
